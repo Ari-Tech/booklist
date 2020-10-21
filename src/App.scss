@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+}
+
+.app-header{
+ height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+.book-list-view{
+ height: 50vh;
+ overflow-y: scroll;
+}
+.row-container-book{
+ display: flex;
+ justify-content: center;
+
+.flex-direction-row-header{
+ font-weight: bold;
+ width: 300px;
+ background: #4c4949;
+ color: #efefef;
+ margin-left:2px;
+ margin-bottom: 2px;
+ height: 50px;
+ vertical-align: middle;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ &:hover{
+ }
+}
+ .flex-direction-row{
+  width: 300px;
+  background: lightblue;
+  margin-left:2px;
+  margin-bottom: 2px;
+  height: 50px;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  &:hover{
+  cursor: pointer;
+   background: aqua;
+  }
+ }
+}
+.book-details{
+ margin-top: 20px;
+ justify-content: center;
+}
+.loading-logo{
+ margin: 20px;
+}
+.details-header{
+ width: 100%;
+ background: #000;
+ height: 30px;
+ line-height: 30px;
+ color: #fff;
+}
