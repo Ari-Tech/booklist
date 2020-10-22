@@ -52,15 +52,22 @@
 }
 .book-details{
  margin-top: 20px;
- justify-content: center;
+ text-align: left;
+ margin-left: 20px;
 }
 .loading-logo{
  margin: 20px;
 }
 .details-header{
- width: 100%;
+ width: calc(100% - 40px);
  background: #000;
  height: 30px;
  line-height: 30px;
  color: #fff;
+}
+.details-label{
+ font-size: 0.9rem;
+ color:#999;
+ width: 120px;
+ margin-left: 20px;
 }

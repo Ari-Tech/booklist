@@ -23,6 +23,9 @@ const BookDetails = (props: IBookDetails)=>{
                         <span className={'details-label'}>Book Publisher</span>: {get(props,'bookRef.book_details[0].publisher')}
                     </p>
                     <p>
+                        <span className={'details-label'}>Publication Date</span>: {get(props,'bookRef.published_date')}
+                    </p>
+                    <p>
                         <span className={'details-label'}>Description</span>: {get(props,'bookRef.book_details[0].description')}
                     </p>
                 </div>
