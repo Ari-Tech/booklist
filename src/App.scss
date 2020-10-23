@@ -21,7 +21,7 @@
 .flex-direction-row-header{
  font-weight: bold;
  width: 300px;
- background: #4c4949;
+ background: #0d3744;
  color: #efefef;
  margin-left:2px;
  margin-bottom: 2px;
@@ -34,20 +34,25 @@
  }
 }
  .flex-direction-row{
-  width: 300px;
-  background: lightblue;
-  margin-left:2px;
+  display: flex;
+  background: #0e5269;
+  color: #efefef;
+  margin-left:1px;
   margin-bottom: 2px;
   height: 50px;
-  vertical-align: middle;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  line-height: 50px;
   &:hover{
   cursor: pointer;
-   background: aqua;
+   background: #127292;
   }
+ }
+ .flex-direction-cell{
+  width: 300px;
+  background: transparent;
+  //background: #0e5269;
+  //color: #efefef;
+  height: 50px;
+  line-height: 50px;
  }
 }
 .book-details{
@@ -66,8 +71,13 @@
  color: #fff;
 }
 .details-label{
+ display: inline;
  font-size: 0.9rem;
  color:#999;
- width: 120px;
+ width: 150px;
  margin-left: 20px;
+}
+.details-content{
+ width: 500px;
+ display: inline;
 }

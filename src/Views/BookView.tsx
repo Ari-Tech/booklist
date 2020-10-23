@@ -21,9 +21,11 @@ const BookView = (props: IBookView)=>{
             props.bookData.map((book: any)=>{
                 return (
                     <div className={'row-container-book'} onClick={()=> bookClickedAction(book)}>
-                        <div className={'flex-direction-row'}>{book.book_details[0].title}</div>
-                        <div className={'flex-direction-row'}>{book.book_details[0].publisher}</div>
-                        <div className={'flex-direction-row'}>{book.book_details[0].author}</div>
+                        <div className={'flex-direction-row'}>
+                        <div className={'flex-direction-cell'}>{book.book_details[0].title}</div>
+                        <div className={'flex-direction-cell'}>{book.book_details[0].publisher}</div>
+                        <div className={'flex-direction-cell'}>{book.book_details[0].author}</div>
+                        </div>
                     </div>
                 )
             }): <img src={logo} width={50} height={50} className={'loading-logo'}></img>

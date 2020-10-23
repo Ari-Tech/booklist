@@ -14,19 +14,19 @@ const BookDetails = (props: IBookDetails)=>{
                 <div className={'details-header'}>Book Details</div>
                 <div>
                     <p>
-                        <span className={'details-label'}>Book Title</span>: {get(props,'bookRef.book_details[0].title')}
+                        <div className={'details-label'}>Book Title</div>: <div className={'details-content'}>{get(props,'bookRef.book_details[0].title')}</div>
                     </p>
                     <p>
-                        <span className={'details-label'}>Book Author</span>: {get(props,'bookRef.book_details[0].author')}
+                        <div className={'details-label'}>Book Author</div>: <div className={'details-content'}>{get(props,'bookRef.book_details[0].author')}</div>
                     </p>
                     <p>
-                        <span className={'details-label'}>Book Publisher</span>: {get(props,'bookRef.book_details[0].publisher')}
+                        <div className={'details-label'}>Book Publisher</div>: <div className={'details-content'}>{get(props,'bookRef.book_details[0].publisher')}</div>
                     </p>
                     <p>
-                        <span className={'details-label'}>Publication Date</span>: {get(props,'bookRef.published_date')}
+                        <div className={'details-label'}>Publication Date</div>: <div className={'details-content'}>{get(props,'bookRef.published_date')}</div>
                     </p>
                     <p>
-                        <span className={'details-label'}>Description</span>: {get(props,'bookRef.book_details[0].description')}
+                        <div className={'details-label'}>Description</div>: <div className={'details-content'}>{get(props,'bookRef.book_details[0].description')}</div>
                     </p>
                 </div>
 
